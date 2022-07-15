@@ -11,9 +11,19 @@
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
-          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
-          <abbr class="badge">{{entry.abbr}}</abbr>
+            {%- if entry.is_journal -%}
+            <abbr class="journal badge">{{entry.abbr}}</abbr>
+            {%- else -%}
+            <abbr class="badge">{{entry.abbr}}</abbr>
+            {% endif %}
+          {% if entry.award %}
+          <span class="award_new badge">{{entry.award}}</span>
+          {% endif %}
+          {% if entry.add %}
+          <span class="award badge">{{entry.add}}</span>
+          {% endif %}
           {%- endif -%}
         {%- endif -%}
         </div>
@@ -27,17 +37,9 @@
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
           <div class="author">
-          {% assign author_array_size = entry.author_array | size %}
-
-          {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
-            {% assign author_array_limit = site.max_author_limit %}
-          {% else %}
-            {% assign author_array_limit = author_array_size %}
-          {% endif %}
-
-          {%- for author in entry.author_array limit: author_array_limit -%}
+          {%- for author in entry.author_array -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name %}
+            {%- if author.last == site.scholar.last_name%}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
               {%- endif -%}
@@ -70,53 +72,18 @@
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
-                {%- if author_array_limit == author_array_size %} and {% endif %}
                 {% if author_is_self -%}
-                  <em>{{author.last}}, {{author.first}}</em>
+                  and <em>{{author.last}}, {{author.first}}</em>
                 {% else -%}
                   {%- if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
+                    and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
                   {% else -%}
-                    {{author.last}}, {{author.first}}
+                    and {{author.last}}, {{author.first}}
                   {%- endif -%}
                 {%- endif -%}
               {%- endunless -%}
             {%- endif -%}
           {%- endfor %}
-
-          {% assign more_authors = author_array_size | minus: author_array_limit %}
-
-          {%- if more_authors > 0 %}
-            {% assign more_authors_hide = more_authors | append: " more author" %}
-            {% if more_authors > 1 %}
-              {% assign more_authors_hide = more_authors_hide | append: "s" %}
-            {% endif %}
-            {% assign more_authors_show = '' %}
-            {%- for author in entry.author_array offset: author_array_limit -%}
-              {% assign more_authors_show = more_authors_show | append: author.last | append: ", " | append: author.first %}
-              {% unless forloop.last %}
-                {% assign more_authors_show = more_authors_show | append: ",&nbsp;" %}
-              {% endunless %}
-            {%- endfor -%}
-            and
-            <span
-                class="more-authors"
-                title="click to view {{more_authors_hide}}"
-                onclick="
-                  var element = $(this);
-                  element.attr('title', '');
-                  var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-                  var cursorPosition = 0;
-                  var textAdder = setInterval(function(){
-                    element.text(more_authors_text.substring(0, cursorPosition + 1));
-                    if (++cursorPosition == more_authors_text.length){
-                      clearInterval(textAdder);
-                    }
-                  }, 15);
-                "
-            >{{more_authors_hide}}</span>
-          {% endif %}
-
           </div>
 
           <!-- Journal/Book title and date -->
@@ -189,6 +156,9 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.video %}
+            <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
           {%- endif %}
           </div>
 

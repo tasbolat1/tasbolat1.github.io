@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-05-06 00:00:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+Our work on *Event-driven visual-tactile sensing and learning for robots* is just accepted to **RSS2020!**

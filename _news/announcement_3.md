@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2020-06-30 00:00:00-0400
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper on *Fast Tactile-based Texture Classification Using Spiking Neural Network* was just accepted by **IROS2020!** 

@@ -503,6 +503,15 @@ footer.sticky-bottom {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+        .award_new {
+          color: white !important;
+          background-color: orange;
+          border: 1px solid orange;
+        }
+        .journal {
+          background-color: blue;
+          border: 1px solid blue;
+        }
       }
       .title {
         font-weight: bolder;
@@ -518,15 +527,6 @@ footer.sticky-bottom {
         > em {
           border-bottom: 1px solid;
           font-style: normal;
-        }
-        > span.more-authors {
-          color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
-          cursor: pointer;
-          &:hover {
-              color: var(--global-text-color);
-              border-bottom: 1px dashed var(--global-text-color);
-          }
         }
       }
       .links {

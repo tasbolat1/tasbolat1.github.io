@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-PhD student at [Dexbot](https://yan-wu.com/research/), [A-STAR](https://www.a-star.edu.sg/) and [CLeAR](https://clear-nus.github.io/), [NUS](https://www.nus.edu.sg/).
+PhD student at [Dexbot](https://yan-wu.com/research/), [A\*STAR](https://www.a-star.edu.sg/) and [CLeAR](https://clear-nus.github.io/), [NUS](https://www.nus.edu.sg/).
 
 Hi, there! I am Tasbolat, a final year PhD student at the School of Computing in the National University of Singapore (NUS). I am supervised by [Dr. Yan Wu](https://yan-wu.com/) and [Dr. Harold Soh](https://haroldsoh.com/). My PhD study is funded by [SINGA](https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa) scholarship.
 

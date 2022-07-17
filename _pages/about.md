@@ -21,7 +21,9 @@ Hi, there! I am Tasbolat, a final year PhD student at the School of Computing in
 
 My current research interests are **Robot Manipulation**, **Tactile Sensing**, **Multimodal Fusion** . I am interested to make robots smarter using artificial intelligence to understand the environment through tactile sensing and vison, perform robotic tasks such as object grasping and manipulation. More on my background works and publication, please take a look at my [CV](/assets/pdf/CV.pdf) and [google scholar](https://scholar.google.com/citations?user=hMOU2dUAAAAJ&hl=en&oi=ao) page.
 
-Previously, I received my M.S. and B.S in Robotics from Nazarbayev University in 2017 and 2015 respectively. During my two year long Master's study, I worked in [ALARIS](https://www.alaris.kz/) lab at [Nazarbayev Uninversity](https://nu.edu.kz/) as a research assistant tackling control problems for both closed and open chain robots.   
+**Previously**, I received my M.S. and B.S in Robotics from Nazarbayev University in 2017 and 2015 respectively. During my two year long Master's study, I worked in [ALARIS](https://www.alaris.kz/) lab at [Nazarbayev Uninversity](https://nu.edu.kz/) as a research assistant tackling control problems for both closed and open chain robots. 
+
+**Email:** tasbolat [at] comp.nus.edu.sg
 
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

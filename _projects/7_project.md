@@ -1,80 +1,33 @@
 ---
 layout: page
-title: Extended Tactile Perception
-description: a project with no image
-img:
+title: #Extended Tactile Perception BLAH
+description: #Vibration Sensing through Tools and Grasped Object
+img: assets/img/extense/tactile_extended_main.jpg
 importance: 1
-category: Tactile Perception
+category: BLAH
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
+Have you ever wondered that blind people can "see" the surroundings by walking cane? In most of cases, we focus on how human moves the tool to feel the surroundings. What if the tool can be also a sensor? This is not new concept, in the 17th century, philospher Rene Descartes discussed about this matter. However, up until recently we did not have clear idea how exactly tool helps humans to understand the surroundings. In 2018 Nature Study [1], Miller and his colleagues at Claude Bernard Lyon 1 University in France reported that humans are actually quite good at pinpointing where an object comes into contact with a handheld tool using touch alone, as if the object were touching their own skin. Tool is not part of skin, then how human brain can make sense of the tool contact?
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.html path="assets/img/extense/extended_brain.webp" title="tool extended image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Our brain senses tool as if it's part of our body. Credit: <a href="https://lottieclarkesci.wordpress.com/2019/05/20/book-review-the-ice-house/">Lottie Clarke</a>
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+In follow-up study, published in Current Biology [2], reveal that the brain regions involved with sensing touch on the body similarly processes it on the tool. The tool is being treated like a sensory extension of your body. This is what we call **Extended Tactile Perception**. Now, question is can we transfer this ability to the robot? Can we make sense of the tactile signal that comes through the tool?
 
-{% raw %}
-```html
+In order to answer these questions, we have setup 3 different experiments using dynamic tactile sensor: tap localization, food identification and grasp stability during robot-to-human handover.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.html path="assets/img/extense/tactile_extended_main.jpg" title="tool extended image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Our brain senses tool as if it's part of our body. Credit: <a href="https://lottieclarkesci.wordpress.com/2019/05/20/book-review-the-ice-house/">Lottie Clarke</a>
+</div>
+In all these tasks, raw tactile data collected from dynamic tactile sensor with various (5-4kH) frequences are preprocessed and fed to machine learning technique that outputs location of the tap (A), food type (B) and stability

@@ -5,7 +5,7 @@ permalink: /projects/
 description: Still in progress.
 nav: true
 nav_order: 2
-display_categories: [Tactile Perception, fun]
+display_categories: [Tactile Perception]
 horizontal: false
 ---
 

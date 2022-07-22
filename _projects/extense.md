@@ -13,7 +13,7 @@ In this work, weconsider how we can enable robots to have a similar capacity, i.
 
 
 <div class="row justify-content-sm-center">
-    <div>
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/extense/tactile_extended_main.jpg" title="tool extended image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

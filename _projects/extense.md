@@ -28,7 +28,7 @@ For more on this work, please look at the following resources:
 <ul>
 <li><a href="https://arxiv.org/abs/2106.00489">Arxiv</a> paper with latest update</li>
 <li><a href="https://github.com/clear-nus/ext-sense">Code and Data</a></li>
-<li><a href="assets/pdf/presentation_IROS2021.pdf">Slides</a></li>
+<li><a href="{{ page.baseurl }}/assets/pdf/presentation_IROS2021.pdf">Slides</a></li>
 </ul>
 
 If you build upon our results and ideas, please use this citation.

@@ -1,46 +1,45 @@
 ---
 layout: page
-title: Extended Tactile Perception
-description: Vibration Sensing through Tools and Grasped Object
-img: assets/img/extense/tactile_extended_main.jpg
+title: Towards Effective Tactile Identification of Textures using a Hybrid Touch Approach
+description: 
+img: assets/img/texture_ident/1.jpg
 importance: 2
 category: Tactile Perception
 ---
 
-Humans display the remarkable ability to sense the world through tools and other held objects. For example, we are able to pinpoint impact locations on a held rod and tell apart different textures using a rigid probe.
-
-In this work, weconsider how we can enable robots to have a similar capacity, i.e., to embody tools and extend perception using standard grasped objects. We propose that vibro-tactile sensing using dynamic tactile sensors on the robot fingers, along with machine learning models, enables robots to decipher contact information that is transmitted as vibrations along rigid objects. 
-
+The sense of touch is arguably the first human sense to develop. Empowering robots with the sense of touch may augment their understanding of interacted objects and the environment beyond standard sensory modalities (e.g., vision). This paper investigates the effect of hybridizing touch and sliding movements for tactile-based texture classification. We develop three machine-learning methods within a framework to discriminate between surface textures; the first two methods use hand-engineered features, whilst the third leverages convolutional and recurrent neural network layers to learn feature representations from raw data. To compare these methods, we constructed a dataset comprising tactile data from 23 textures gathered using the iCub platform under a loosely constrained setup, i.e., with nonlinear motion. 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/extense/tactile_extended_main.jpg" title="tool extended image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/texture_ident/collage-1.png" title="robot slide image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    <strong>Fig.1</strong> Our goal is to enable robots to extend their tactile perception through standard objects such as tools. (A) We show that robots are able to accurately localize taps on an acrylic rod using fast vibro-tactile sensing and machine learning. Vibrations caused by the tap travel up the rod where they are picked up by a dynamic tactile sensor (the NUSkin in this image). The signal is captured and mapped into a tap position using simple models and learned features. We provide results on two additional tasks: (B) grasp stability classification during object handover and (C) food classification through a fork
+    <strong>Fig.1</strong> Tactile sensor readings (red dots,left) during a sliding motion on the bathroom mat during three time points. Different sets of taxels are activated during the motion, which can provide additional data about the underlying texture.
 </div>
 
-We demonstrate that fine localization on a held rod is possible using our approach. Next, we show that vibro-tactile perception can lead to reasonable grasp stability prediction during object handover, and accurate food identification using a standard fork.
+In line with findings from neuroscience, our experiments show that a good initial estimate can be obtained via touch data, which can be further refined via sliding; combining both touch and sliding data results in 98% classification accuracy over unseen test data. 
 
 For more on this work, please look at the following resources:
 
 <ul>
-<li><a href="https://arxiv.org/abs/2106.00489">Arxiv</a> paper with latest update</li>
-<li><a href="https://github.com/clear-nus/ext-sense">Code and Data</a></li>
+<li><a href="https://github.com/clear-nus/TactileLearning">Data</a></li>
 <li><a href="assets/pdf/presentation_IROS2021.pdf">Slides</a></li>
+<li><a href="assets/pdf/presentation_IROS2021.pdf">Poster</a></li>
 </ul>
 
 If you build upon our results and ideas, please use this citation.
 {% raw %}
 ```html
-@inproceedings{taunyazov2021extended,
-  title = {Extended Tactile Perception: Vibration Sensing through Tools and Grasped Objects},
-  author = {Taunyazov, Tasbolat and Song, Luar Shui and Lim, Eugene and See, Hian Hian and Lee, David and Tee, Benjamin CK and Soh, Harold},
-  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages = {1755--1762},
-  year = {2021},
-  organization = {IEEE},
+@inproceedings{taunyazov2019towards,
+  title = {Towards effective tactile identification of textures using a hybrid touch approach},
+  author = {Taunyazov, Tasbolat and Koh, Hui Fang and Wu, Yan and Cai, Caixia and Soh, Harold},
+  booktitle = {International Conference on Robotics and Automation (ICRA)},
+  pages = {4269--4275},
+  year = {2019},
+  organization = {IEEE}
 }
+
+
 ```
 {% endraw %}

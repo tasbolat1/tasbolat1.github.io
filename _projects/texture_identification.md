@@ -25,7 +25,7 @@ For more on this work, please look at the following resources: {{ site.baseurl }
 <ul>
 <li><a href="https://github.com/clear-nus/TactileLearning" target="_blank">Data</a></li>
 <li><a href="{{ page.baseurl }}/assets/pdf/presentation_ICRA2019.pdf" target="_blank">Slides</a></li>
-<li><a href="{{ page.baseurl }}assets/pdf/poster_ICRA2019.pdf" target="_blank">Poster</a></li>
+<li><a href="{{ page.baseurl }}/assets/pdf/poster_ICRA2019.pdf" target="_blank">Poster</a></li>
 </ul>
 
 If you build upon our results and ideas, please use this citation.

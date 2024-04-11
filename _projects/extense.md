@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Extended Tactile Perception
+small_title: Extended Tactile Perception
 description: Vibration Sensing through Tools and Grasped Object
 img: assets/img/extense/tactile_extended_main.jpg
 importance: 2
-category: Tactile Perception
+category: "Feel: Tactile Sensing"
 ---
 
 Humans display the remarkable ability to sense the world through tools and other held objects. For example, we are able to pinpoint impact locations on a held rod and tell apart different textures using a rigid probe.

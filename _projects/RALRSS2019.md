@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Semi-autonomous robot teleoperation with obstacle avoidance via model predictive control
+small_title: Teleoperation via NMPC
 description: 
 img: assets/img/ralrss2019/main.png
 importance: 3
-category: Robot Control
+category: "Act: Control & Robot Manipulation"
 ---
 
 This paper proposes a model predictive control ap- proach for semi-autonomous teleoperation of robot manipulators: the focus is on avoiding obstacles with the whole robot frame, while exploiting predictions of the operator’s motion. The hand pose of the human operator provides the reference for the end effector, and the robot motion is continuously replanned in real time, satisfying several constraints. An experimental case study is described regarding the design and testing of the described framework on a UR5 manipulator: the experimental results con- firm the suitability of the proposed method for semi-autonomous teleoperation, both in terms of performance (tracking capability and constraint satisfaction) and computational complexity (the control law is calculated well within the sampling interval).

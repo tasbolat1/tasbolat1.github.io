@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Event-Driven Visual-Tactile Sensing and Learning for Robots 
+small_title: VT-SNN
 description: 
 img: assets/img/rss2020_event/mainfig.png
 importance: 3
-category: Tactile Perception
+category: "Feel: Tactile Sensing"
 ---
 
 Many everyday tasks require multiple sensory modalities to perform successfully. For example, consider fetching a carton of soymilk from the fridge; humans use vision to locate the carton and can infer from a simple grasp how much liquid the carton contains. This inference is performed robustly using a power-efficient neural substrate — compared to current artificial systems, human brains require far less energy.

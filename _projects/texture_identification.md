@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Towards Effective Tactile Identification of Textures using a Hybrid Touch Approach
+small_title: Texture Identificaiton
 description: 
 img: assets/img/texture_ident/1.jpg
 importance: 2
-category: Tactile Perception
+category: "Feel: Tactile Sensing"
 ---
 
 The sense of touch is arguably the first human sense to develop. Empowering robots with the sense of touch may augment their understanding of interacted objects and the environment beyond standard sensory modalities (e.g., vision). This paper investigates the effect of hybridizing touch and sliding movements for tactile-based texture classification. We develop three machine-learning methods within a framework to discriminate between surface textures; the first two methods use hand-engineered features, whilst the third leverages convolutional and recurrent neural network layers to learn feature representations from raw data. To compare these methods, we constructed a dataset comprising tactile data from 23 textures gathered using the iCub platform under a loosely constrained setup, i.e., with nonlinear motion. 

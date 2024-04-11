@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Constrained Orientation Control of a Spherical Parallel Manipulator via Online Convex Optimization
+small_title: SPM control
 description: 
 img: assets/img/tmech2017_convex/FIG1-1.png
 importance: 3
-category: Robot Control
+category: "Act: Control & Robot Manipulation"
 ---
 
 This paper introduces a new framework for the closed-loop orientation control of spherical parallel manipulators (SPMs) based on the online solution of a convex optimization problem. The aim of solving a constrained optimization problem is to define a reference position for the SPM that remains as close as possible to the ideal reference (i.e., the one for which the top mobile platform has the desired orientation), at the same time keeping the SPM within the set of configurations in which

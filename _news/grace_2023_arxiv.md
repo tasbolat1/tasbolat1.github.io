@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-10-30 00:00:00-0400
+date: 2024-05-14 00:00:00-0400
 inline: true
 ---
 
-Now we can optimize grasps using multiple classifiers using *GRaCE*. Unlike *GraspFlow*, it takes into account a hierarchical rule! Please check out latest paper on *GRaCE: Optimizing Grasps to Satisfy Ranked Criteria in Complex Scenarios* on [ArXiv](https://arxiv.org/abs/2309.08887). 
+Our latest work on grasp synthesis is accepted to RSS 2024 (29% acceptance rate). Now we can optimize grasps using multiple classifiers using *GRaCE*. Unlike *GraspFlow*, it takes into account a hierarchical rule! Check out the paper *GRaCE: Balancing Multiple Criteria to Achieve Stable, Safe, and Task Functional Grasps* on [ArXiv](https://arxiv.org/abs/2309.08887). 

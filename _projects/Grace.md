@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "GRaCE: Optimizing Grasps to Satisfy Ranked Criteria in Complex Scenarios"
+title: "GRaCE: Balancing Multiple Criteria to Achieve Stable, Collision-Free, and Functional Grasps"
 small_title: GRaCE
 description: 
 img: assets/img/grace/grace_mainfig.png
